@@ -6,8 +6,7 @@ def manhattan_distance(x, y):
     Must return a float.
     """
     # Write code here
-    res = 0
-    for i, j in zip(x, y):
-        res += np.abs(i - j)
-    return float(res)
+    x = np.array(x)
+    y = np.array(y)
+    return float(np.sum(np.abs(x - y)))
     pass
