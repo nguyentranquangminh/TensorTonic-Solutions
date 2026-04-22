@@ -79,7 +79,7 @@ def matrix_normalization(matrix, axis=None, norm_type='l2'):
                     intended_matrix[i] = row / s
             return intended_matrix
         if axis == None:
-            s = np.max(np.ans(matrix))
+            s = np.max(np.abs(matrix))
             if (s == 0):
                 return np.zeros(matrix.shape)
             return matrix / np.max(np.ans(matrix))
